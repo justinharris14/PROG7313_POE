@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">ByBetterBudget</string>
+    <string name="spinner_prompt">Select Category</string>
+    <string name="hint_amount">Amount</string>
+    <string name="hint_date">Date (YYYY-MM-DD)</string>
+    <string name="hint_description">Description (optional)</string>
+    <string name="btn_save">Save Expense</string>
+    <string name="spinner_type_prompt">Select type</string>
+    <string name="spinner_category_prompt">Select category</string>
+    <string name="spinner_currency_prompt">Select currency</string>
+    <string name="label_dark_mode">Dark Mode</string>
+    <string name="label_currency">Select Currency</string>
+
+    <string name="btn_logout">Logout</string>
+    <string name="btn_back_home">← Home</string>
 </resources>

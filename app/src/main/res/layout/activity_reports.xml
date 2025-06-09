@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="26dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/etFromDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:hint="From (yyyy-MM-dd)"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:drawableEnd="@android:drawable/ic_menu_today"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etToDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:hint="To (yyyy-MM-dd)"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:drawableEnd="@android:drawable/ic_menu_today"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Report"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/combinedChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Home"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_margin="16dp"/>
+</LinearLayout>

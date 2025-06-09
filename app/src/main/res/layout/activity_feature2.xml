@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="26dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="From (yyyy-MM-dd)"
+            android:focusable="false"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"/>
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="To (yyyy-MM-dd)"
+            android:focusable="false"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShowExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Expenses"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="ifContentScrolls"/>
+
+    <Button
+        android:id="@+id/btnBackHome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Home"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

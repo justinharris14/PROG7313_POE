@@ -20,16 +20,16 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // Initialize FirebaseAuth
+
         auth = FirebaseAuth.getInstance()
 
-        // Link UI elements
+
         emailInput = findViewById(R.id.emailip)
         passwordInput = findViewById(R.id.passwordip)
         val loginButton: Button = findViewById(R.id.btnLogin)
         val registerLink: TextView = findViewById(R.id.tvRegister)
 
-        // Login button click
+        // Login button
         loginButton.setOnClickListener {
             val email = emailInput.text.toString().trim()
             val password = passwordInput.text.toString().trim()
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        // Registration link click
+        // Registration link
         registerLink.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
